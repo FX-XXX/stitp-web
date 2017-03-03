@@ -1,0 +1,32 @@
+{
+  "y_legend":{
+    "text":   "electricity",
+    "style": "{color: #736AFF; font-size:12px;}"
+  },
+
+  "elements":[
+    {
+      "type":      "line",
+      "colour":    "#736AFF",
+      "text":      "Q (C)",
+      "font-size": 20,
+      "width":     2,
+      "values" :   [
+      20,50,40,30,45.5,40
+      ]
+    }
+  ],
+
+  "x_axis":{
+    "labels": {
+      "labels":[
+      "dxfds","fgsdf","sdaff","adfg","sfg"
+      ]
+    }
+  },
+
+  "y_axis":{
+    "min": 20,
+    "max": 60
+  }
+}
