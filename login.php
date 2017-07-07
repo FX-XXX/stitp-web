@@ -14,15 +14,15 @@ $username=$_POST['Username'];//接收数据
 $passwd=$_POST['Password'];
 if((isset($username))&&(isset($passwd))){  //是否输入
    echo "<script language=\"JavaScript\">alert(\"hello\");</script>";  
-   $con = mysql_connect("127.0.0.1:3306","root");
+   $con = mysql_connect("127.0.0.1:3306","root","0");
     if (!$con)
     {
         die('Could not connect: ' . mysql_error());
     }
-mysql_select_db("stitp",$con);
+mysql_select_db("smart_home",$con);//smart_home
 $dbusername=null;
 $dbpassword=null;
-$result=mysql_query("select * from users where user_name='".$username."';");
+$result=mysql_query("select * from users where uname='".$username."';");
 $res = mysql_fetch_array($result);//查询结果
 $dbusername=$res[1];
 $dbpassword=$res[2];

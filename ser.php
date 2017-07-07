@@ -1,4 +1,4 @@
-<?php
+4<?php
 $myfile = fopen("initial1.txt", "r") or die("Unable to open file!");
 $newfile = fopen("homechar.txt", "w") or die("Unable to open file!");
 //只读打开格式文件，清空写打开最终表格文件
@@ -8,8 +8,8 @@ $newfile = fopen("homechar.txt", "w") or die("Unable to open file!");
         die('Could not connect: ' . mysql_error());
     }
     // $nowdata = date("Ymd");//当天的日期
-	mysql_select_db("stitp",$con);
-	$querry = "select * from alle order by date DESC";//降序查询
+	mysql_select_db("smart_home",$con);//smart_home
+	$querry = "select * from W order by t DESC";//降序查询
     $sql = mysql_query($querry,$con);
     $i = 0;
     $finelec = "";//为避免报warning先生成空字符

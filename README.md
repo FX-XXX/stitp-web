@@ -1,2 +1,6 @@
-# stitp-web
-stitp project,set a  web to show data and control on-off
+__index.html  --login.php
+__menu.html   --homechar.txt
+     		  --initial1.txt
+			  --ser.php
+__control.php --on-off.php
+              --serphp.php (test-server) 			  	
